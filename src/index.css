@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: aliceblue;
+}
+.bg-hauptbild {
+  background-image: url('/img/WhatsApp\ Bild\ 2023-09-18\ um\ 13.59.05.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.fullflex {
+  @apply flex justify-center items-center;
+}
