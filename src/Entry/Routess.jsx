@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { About, Codder, Contact, Media, Portfolio } from '../Shared';
+import { Portret, Codder, Contact, Studio, Lifestyle, Cosplay } from '../Shared';
 import { MainPage } from "../Pages"
 import { RequireAuth, } from "../hoc"
 import AuthProvider from "../hoc/AuthProvider"
@@ -14,11 +14,14 @@ export default function Routess() {
             <MainPage />
           </RequireAuth>
         }>
-          <Route path='about' element={<About />} />
-          <Route path='portfolio' element={<Portfolio />} />
+          <Route path='portret' element={<Portret />} />
+          <Route path='lifestyle' element={<Lifestyle />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='socialmedia' element={<Media />} />
+          <Route path='studio' element={<Studio />} />
+          <Route path='cosplay' element={<Cosplay />} />
+          <Route path='*' element={<MainPage />} />
         </Route>
+        <Route path='*' element={<Codder />} />
       </Routes>
     </AuthProvider>
 

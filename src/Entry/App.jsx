@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
   return (
-    <div className='h-screen w-full py-5 bg-hauptbild z-10'>
+    <div className='h-screen w-full py-5 bg-slate-600 z-10 scrollable-content'>
       <Dasher />
       <MainWrapper>
         <Routess />

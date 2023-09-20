@@ -7,7 +7,7 @@ export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
 
   const signin = (newUser, cb) => {
-    if (newUser == "DAinLA") {
+    if (newUser == "123") {
       setUser(newUser)
     } else {
       toast('Invalid Code!', {

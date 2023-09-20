@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function media() {
+export default function Studio() {
   return <div>media</div>;
 }

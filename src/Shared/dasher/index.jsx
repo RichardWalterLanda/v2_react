@@ -5,7 +5,7 @@ export default function dasher() {
     <span
       className='block absolute z-20 w-full h-screen top-0 bg-black opacity-70'
     >
-    
+
     </span>
   )
 }
